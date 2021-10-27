@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Formulários</title>
+    </head>
+    <body>
+<div>
+        <div class="anside">
+            <h1> Bem-Vindo(a)</h1>
+        </div>
+
+        <div class="formAula1">
+            <form id="Form1" method="post" autocomplete="off">
+                <legend>LOGIN</legend>
+                <div class="">
+                    <label for="nomeUsuario"></label>
+                    <input type="text" id="nomeUsuario" class="nomeUsuario" placeholder="Usuário">
+                </div>
+                <div class="Crendencial">
+                    <script>                        
+                        function show() {
+                          var senha = document.getElementById("senha");
+                          if (senha.type === "password") {
+                            senha.type = "text";
+                          } else {
+                            senha.type = "password";
+                          }
+                        }
+                    </script>
+                    <label for="senha"></label>
+                    <input type="password" id="senha" name="" class="Senha" placeholder="Senha">
+                    <input type="checkbox" onclick="show()">
+                </div>
+                <div class="botoes">
+                    <button type="submit" class="botao1">Login</button>
+                </div>
+            </form>
+        </div>
+</div>
+
+    </body>
+</html>
